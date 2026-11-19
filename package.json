@@ -1,0 +1,16 @@
+{
+  "name": "whatsapp-bot-failure-lab",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Reproduce duplicate replies, cross-talk, crashes and retry storms in WhatsApp Cloud API bots, locally, with evidence.",
+  "license": "MIT",
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "lab": "node skill/whatsapp-bot-failure-lab/scripts/lab.mjs",
+    "demo:buggy": "node skill/whatsapp-bot-failure-lab/scripts/lab.mjs run --config examples/lab.buggy.json",
+    "demo:fixed": "node skill/whatsapp-bot-failure-lab/scripts/lab.mjs run --config examples/lab.fixed.json",
+    "test": "node --test \"test/*.test.mjs\"",
+    "build": "node tools/build-zip.mjs"
+  }
+}

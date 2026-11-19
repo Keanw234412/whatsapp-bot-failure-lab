@@ -1,0 +1,18 @@
+{
+  "webhookUrl": "http://127.0.0.1:3000/webhook",
+  "mockPort": 8788,
+  "appSecret": "demo-app-secret",
+  "verifyToken": "demo-verify-token",
+  "handoff": { "trigger": "saya mau bicara dengan admin", "expectReply": "admin", "silentAfter": true },
+  "policies": { "staleMessages": "ignore" },
+  "start": {
+    "command": "node examples/fixed-bot.mjs",
+    "env": {
+      "PORT": "3000",
+      "GRAPH_API_URL": "{{MOCK_URL}}",
+      "LAB_EFFECT_URL": "{{MOCK_URL}}/__lab/effect",
+      "WA_APP_SECRET": "demo-app-secret",
+      "WA_VERIFY_TOKEN": "demo-verify-token"
+    }
+  }
+}

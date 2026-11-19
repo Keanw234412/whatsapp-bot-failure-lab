@@ -1,0 +1,9 @@
+node_modules/
+dist/
+wa-lab-report/
+lab.config.json
+# Pro pack: sold separately, never commit
+skill/whatsapp-bot-failure-lab/scripts/scenarios/pro.mjs
+skill/whatsapp-bot-failure-lab/references/fixes.md
+skill/whatsapp-bot-failure-lab/LICENSE-PRO.txt
+test/pro.test.mjs
