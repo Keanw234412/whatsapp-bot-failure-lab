@@ -7,3 +7,6 @@ skill/whatsapp-bot-failure-lab/scripts/scenarios/pro.mjs
 skill/whatsapp-bot-failure-lab/references/fixes.md
 skill/whatsapp-bot-failure-lab/LICENSE-PRO.txt
 test/pro.test.mjs
+
+# local try-out area (fictional test bot, guide)
+playground/
